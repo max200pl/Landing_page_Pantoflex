@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    @include screen-xl {
+        padding: 0 15px;
+    }
+
+
+    @include screen-lg {
+        padding: 0 60px;
+    }
+
+
+    @include screen-md {
+        padding: 0 40px;
+    }
+
+
+    @include screen-sm-md {
+        padding: 0 20px;
+    }
+
+
+    @include screen-xs-sm {
+        padding: 0 15px;
+    }
+}

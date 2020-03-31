@@ -1,0 +1,87 @@
+.discount {
+    background: url("../../../img/discount/discount_bg.jpg") center no-repeat;
+    background-size: cover;
+    padding-bottom: 4px;
+}
+
+.discount__title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    color: $color-title-gray;
+    padding-top: 33px;
+    padding-bottom: 27.2px;
+
+    & span {
+        letter-spacing: 3px;
+        color: $color-title-blue;
+    }
+
+    @include screen-md-lg {
+        font-size: 54px;
+    }
+
+
+    @include screen-xs-sm {
+        padding-top: 23px;
+        padding-bottom: 17.2px;
+        font-size: 39px;
+    }
+}
+
+.discount__text {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+    color: $color-discount-title-gray;
+    margin-bottom: 47.2px;
+
+    @include screen-xs-sm {
+        font-size: 19px;
+        margin-bottom: 27.2px;
+    }
+}
+
+.discount__btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 44px;
+    max-width: 220px;
+    z-index: 4;
+
+    @include screen-xs-sm {
+        margin: 0 auto 27.2px;
+    }
+}
+
+.discount__img {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: -24px;
+
+    @include screen-md-lg {
+        right: -57.4px;
+        top: 176px;
+
+        & img {
+            max-width: 80%;
+        }
+    }
+
+
+    @include screen-sm-md {
+        right: -220px;
+        top: 206px;
+
+        & img {
+            max-width: 50%;
+        }
+    }
+
+
+    @include screen-xs-sm {
+        display: none;
+    }
+}

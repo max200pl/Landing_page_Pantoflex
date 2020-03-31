@@ -1,0 +1,172 @@
+.intro {
+    background: url("../../../img/intro/intro_bg.jpg") center no-repeat;
+    background-size: cover;
+    padding-top: 170px;
+    padding-bottom: 72px;
+    position: relative;
+    z-index: 1;
+
+    @include screen-xs-sm {
+        padding-top: 140px;
+    }
+
+
+    @include screen-xs-md {
+        padding-top: 84px;
+        padding-bottom: 42px;
+    }
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.intro__content {
+    @include screen-xs-md {
+        width: 100%;
+    }
+}
+
+.intro__header {
+    @include screen-xs-md {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.intro__title {
+    font-size: 64px;
+    line-height: 0.9;
+    font-weight: 700;
+    color: $color-gray-into;
+    margin-bottom: 16px;
+
+    @include screen-lg {
+        min-width: 375px;
+        font-size: 64px;
+    }
+
+
+    @include screen-md {
+        min-width: 375px;
+        font-size: 54px;
+    }
+
+
+    @include screen-sm-md {
+        font-size: 54px;
+    }
+
+
+    @include screen-xs-sm {
+        font-size: 39px;
+    }
+}
+
+.intro__subtitle {
+    max-width: 470px;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 500;
+    color: $color-subtitle;
+    margin-bottom: 40px;
+
+    @include screen-lg {
+        font-size: 34px;
+    }
+
+
+    @include screen-md {
+        font-size: 26px;
+    }
+
+
+    @include screen-xs-md {
+        max-width: 100%;
+    }
+
+
+    @include screen-xs-sm {
+        font-size: 24px;
+        margin-bottom: 34.8px;
+    }
+}
+
+.intro_women-point {
+    display: none;
+    position: absolute;
+    bottom: -3px;
+    left: 44.1%;
+    z-index: -1;
+
+    @include screen-lg-xl {
+        left: 43.4%;
+        bottom: 35.9px;
+
+        & img {
+            max-width: 49%;
+        }
+    }
+
+
+    @include screen-lg {
+        display: block;
+        left: 44.5%;
+        bottom: 135.8px;
+
+        & img {
+            max-width: 70%;
+        }
+    }
+}
+
+.intro_packaging {
+    position: absolute;
+    bottom: -118px;
+    left: 33.9%;
+    z-index: 2;
+
+    @include screen-xl {
+        & img {
+            max-width: 100%;
+        }
+    }
+
+
+    @include screen-lg-xl {
+        bottom: -195.2px;
+        left: 30.8%;
+        z-index: 1;
+
+        & img {
+            max-width: 87.3%;
+        }
+    }
+
+
+    @include screen-md-lg {
+        bottom: -177.2px;
+        left: 11%;
+        max-width: 40%;
+        min-width: 35%;
+    }
+
+
+    @include screen-sm-md {
+        bottom: 72px;
+        left: 3.8%;
+        z-index: 1;
+
+        & img {
+            max-width: 90%;
+        }
+    }
+
+
+    @include screen-xs-sm {
+        display: none;
+    }
+}

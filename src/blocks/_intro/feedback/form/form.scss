@@ -1,0 +1,52 @@
+.form {
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__group {
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16;
+    display: flex;
+    flex-direction: row;
+}
+
+.form__group input:hover:invalid { /*when a field is considered invalid by the browser*/
+    box-shadow: 0px 0 5.6px 0.5px rgba(176, 53, 53, 0.5) inset;
+}
+
+.form__group input:required:valid { /*when a field is considered by the browser */
+    box-shadow: 0px 0 5.6px 0.5px rgba(92, 208, 83, 0.5) inset;
+}
+
+.form__input {
+    box-sizing: border-box;
+    max-width: 220px;
+    font-size: 18px;
+    line-height: 1;
+    padding: 19px 0 19px 53px;
+    border: 1px solid #737e96;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(56, 100, 137, 0.2) inset;
+
+    &:focus {
+        box-shadow: 0px 0 5.6px 0.5px rgba(56, 100, 137, 0.5) inset;
+    }
+}
+
+.form__img-name {
+    background-color: transparent;
+    background-image: url("../../../../../img/form_name.svg");
+    background-position: center left 20px;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.form__img-phone {
+    background-color: transparent;
+    background-image: url("../../../../../img/intro-form/form_phone.svg");
+    background-position: center left 20px;
+    background-repeat: no-repeat;
+    outline: none;
+}

@@ -1,0 +1,36 @@
+.healing {
+    margin-bottom: 40px;
+
+    @include screen-sm-md {
+        margin-left: 15%;
+    }
+
+
+    @include screen-xs-sm {
+        margin-left: 10%;
+    }
+}
+
+.healing-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-gray-into;
+    min-width: 20px;
+    max-height: 20px;
+    margin-bottom: 20px;
+
+    & img {
+        min-width: 20px;
+    }
+
+    @include screen-xs-md {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.healing-item__text {
+    margin-left: 20px;
+}

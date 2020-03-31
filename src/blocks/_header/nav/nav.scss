@@ -1,0 +1,33 @@
+.nav__modal {
+    display: none;
+
+    @include screen-sm {
+        display: block;
+    }
+}
+
+.nav {
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: $color-gray-into;
+
+    @include screen-sm-md {
+        margin: 16px 0;
+    }
+}
+
+.nav__link {
+    margin-left: 37px;
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 1.2px dashed $color-gray-into;
+    }
+
+    @include screen-sm {
+        margin-left: 18px;
+        display: inline;
+    }
+}

@@ -1,0 +1,28 @@
+/*========HEADER*/
+@import "_header/header";
+@import "_header/logo/logo";
+@import "_header/nav/nav";
+@import "_header/burger/burger";
+
+/*=========INTRO*/
+@import "_intro/intro";
+
+@import "_intro/healing/healing";
+
+@import "_intro/feedback/feedback";
+@import "_intro/feedback/form/form";
+
+/*========SYMPTOMS*/
+@import "_symptoms/symptoms";
+@import "_symptoms/problems/problems";
+@import "_symptoms/problems/warning/warning.scss";
+
+/*========DISCOUNT*/
+@import "_discount/discount";
+
+/*====== COMPOSITION*/
+@import "_composition/composition";
+@import "_composition/types/types";
+
+/*====== btn*/
+@import "_btn/btn";

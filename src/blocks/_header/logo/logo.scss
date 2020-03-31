@@ -1,0 +1,33 @@
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo__img-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo__img-name {
+    display: block;
+    margin-top: 34px;
+    margin-left: 60px;
+
+    & > img {
+        @include screen-lg {
+            max-width: 100%;
+        }
+
+
+        @include screen-md {
+            max-width: 70%;
+        }
+
+
+        @include screen-xs-md {
+            display: none;
+        }
+    }
+}
