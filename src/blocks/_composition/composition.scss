@@ -2,43 +2,38 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-top: 177px;
 
     @include screen-lg-xl {
         padding-top: 137px;
     }
 
 
-    @include screen-sm-md {
+    @include screen-xs-lg {
+        flex-wrap: wrap;
+    }
+
+
+    @include screen-md {
         padding-top: 67px;
     }
 
 
-    @include screen-xs-sm {
+    @include screen-xs {
         padding-top: 37px;
     }
 }
 
-.composition__block {
-    position: absolute;
-    overflow: auto;
-    margin: auto;
-    left: 0;
-    right: 0;
-
-    @include screen-lg {
-        width: auto;
-        left: 0;
-    }
+.composition__header {
+    flex-basis: 100%;
 }
 
 .composition__title {
-    font-size: 50px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 1;
     color: $color-title;
     max-width: 498px;
-    padding-bottom: 56px;
+    padding: 56px 0;
     text-align: center;
     margin: auto;
 
@@ -47,20 +42,32 @@
         color: $color-title-blue;
     }
 
-    @include screen-xl {
-        text-align: start;
-        margin: 0;
+    @include screen-xs-sm {
+        padding: 20px 0 30px;
+        font-size: 30px;
     }
 
 
     @include screen-sm-md {
-        font-size: 40px;
+        font-size: 44px;
         max-width: 100%;
     }
 
 
-    @include screen-xs-sm {
-        font-size: 30px;
+    @include screen-md-lg {
+        font-size: 46px;
+        max-width: 100%;
+    }
+
+
+    @include screen-lg-xl {
+        max-width: 80%;
+    }
+
+
+    @include screen-xl {
+        text-align: start;
+        margin: 0;
     }
 }
 

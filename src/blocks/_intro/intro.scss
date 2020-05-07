@@ -57,18 +57,17 @@
 
 
     @include screen-sm-md {
-        font-size: 54px;
+        font-size: 44px;
     }
 
 
     @include screen-xs-sm {
-        font-size: 39px;
+        font-size: 34px;
     }
 }
 
 .intro__subtitle {
     max-width: 470px;
-    font-size: 34px;
     line-height: 1;
     font-weight: 500;
     color: $color-subtitle;
@@ -102,16 +101,6 @@
     left: 44.1%;
     z-index: -1;
 
-    @include screen-lg-xl {
-        left: 43.4%;
-        bottom: 35.9px;
-
-        & img {
-            max-width: 49%;
-        }
-    }
-
-
     @include screen-lg {
         display: block;
         left: 44.5%;
@@ -119,6 +108,16 @@
 
         & img {
             max-width: 70%;
+        }
+    }
+
+
+    @include screen-lg-xl {
+        left: 43.4%;
+        bottom: 35.9px;
+
+        & img {
+            max-width: 49%;
         }
     }
 }
